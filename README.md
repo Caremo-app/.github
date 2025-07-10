@@ -18,10 +18,35 @@ Technologies: FastAPI, PostgreSQL, Docker, SQLAlchemy, Meta Whatsapp API, Twilio
 
 ## Frontend System (Mobile IOS + Smart Watch)
 
+The frontend consists of a native **Swift iOS app** that communicates with Apple Watch sensors via **HealthKit**. It receives real-time biometric data, transmits it to the backend, and displays alerts and recommendations to users and caregivers.
+
+### ✅ Features:
+- Real-time sync of heart rate and PPG waveform
+- Background monitoring using HealthKit + WatchConnectivity
+- Emergency alert interface (family/caregiver view)
+- Secure OAuth 2.0 login and persona mapping
+- Location-based emergency route display
+
+### 📦 iOS Tech Stack:
+
+#### 🍏 Native Apple Frameworks:
+- `SwiftUI` — Modern declarative UI framework
+- `Combine` — Reactive state handling
+- `WatchConnectivity` — iPhone-Apple Watch communication
+- `CoreLocation` — GPS location tracking for emergencies
+- `HealthKit` — Real-time access to vitals (heart rate, PPG)
+
+#### 📦 Third-party Libraries:
+- [Alamofire](https://github.com/Alamofire/Alamofire) `==5.6.4` — HTTP networking (added via Swift Package Manager)
+
+> ℹ️ Apple frameworks are bundled with Xcode and require no manual installation.  
+> ℹ️ Alamofire is managed via Swift Package Manager:  
+> `File → Swift Packages → Add Package Dependency → https://github.com/Alamofire/Alamofire`
+
 # Architecture
 
 ## UML Diagram
 ![alt text](<Diagram's for Caremo - Software Structure.png>)
 
 ## Service Flow
-![alt text](image.png)
+![alt text](image-1.png)
