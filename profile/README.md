@@ -3,6 +3,11 @@
 
 CAREMO is a mobile-healthcare system designed to remotely monitor elderly individuals, especially for Non-Communicable Diseases (NCDs) like hypertension or cardiac abnormalities. It uses PPG signals from wearables and provides AI-powered anomaly detection, emergency voice call alerts, and real-time location tracking. CAREMO is composed of two main subsystems:
 
+## 🔌 API Access
+The Caremo backend exposes a public API for interacting with the system programmatically.
+- Base URL: https://api.caremo.id
+- Interactive Docs (Swagger UI): https://api.caremo.id/docs
+
 # System Organization
 
 ## Backend System
